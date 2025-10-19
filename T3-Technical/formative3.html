@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>MY PORTFOLIO</h1>
+  </header>
+    <nav>
+      <ul>
+        <li class="dropdown">
+          <a href="#about">About Me</a>
+          <ul class="dropdown-content">
+            <li><a href="#albums">My Favorite Albums</a></li>
+            <li><a href="#music">My Music</a></li>
+          </ul>
+        </li>
+        <li><a href="#works">My Works</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+  
+
+
+  <section id="about" class="section-dark">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="images/profile.jpg" alt="Profile" class="profile-img">
+      <div class="about-text">
+        <h3>James Andrei C. Cruz</h3>
+        <p>Hi! I’m <strong>Andrei</strong>, a <b>Multimedia Arts</b> student from <em>FEU Institute of Technology</em>, living in <b>Marilao, Bulacan.</b>
+        I like video editing, illustration, and design, and I’ve been getting curious about 3D modeling too.
+        Most of the time, I’m either making music or just staring at the sky thinking about random stuff.
+        I don’t really work on my craft as much as I should, but I have my interests and dreams, maybe to 
+        freelance, work as a designer, or be part of a film crew someday.</p>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="albums" class="section-dark">
+  <h2>My Favorite Albums</h2>
+  <div class="album-grid">
+    <div class="album">
+      <a href="https://open.spotify.com/album/4NESArVYihJKvoXk1eYE8A" target="_blank">
+        <img src="images/albums/YL_STARZ.png" alt="STARZ — Yung Lean">
+      </a>
+      <p>STARZ<br><span>Yung Lean</span></p>
+    </div>
+
+    <div class="album">
+      <a href="https://open.spotify.com/album/2cEL04tddUszYFy6tEM1rI" target="_blank">
+        <img src="images/albums/BLD_COLDVISIONS.png" alt="COLD VISIONS — Bladee">
+      </a>
+      <p>COLD VISIONS<br><span>Bladee</span></p>
+    </div>
+
+    <div class="album">
+      <a href="https://open.spotify.com/album/7aNclGRxTysfh6z0d8671k" target="_blank">
+        <img src="images/albums/AT_SAM.png" alt="Selected Ambient Works 85–92 — Aphex Twin">
+      </a>
+      <p>Selected Ambient<br>Works 85–92<br><span>Aphex Twin</span></p>
+    </div>
+
+    <div class="album">
+      <a href="https://open.spotify.com/album/10iGXFl7sNkUDjIPLRA8Ym" target="_blank">
+        <img src="images/albums/YL_STRANGER.jpg" alt="Stranger — Yung Lean">
+      </a>
+      <p>Stranger<br><span>Yung Lean</span></p>
+    </div>
+  </div>
+</section>
+
+
+  <section id="music" class="section-dark">
+  <h2>My Music</h2>
+  <div class="music-grid">
+
+    <div class="music img">
+      <img src="images/my music/de_illusion.png" alt="Song 1 Cover">
+      <audio controls class="music-player">
+        <source src="audios_mymusic/de_illusion.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music img">
+      <img src="images/my music/tdasit_711.png" alt="Song 2 Cover">
+      <audio controls class="music-player">
+        <source src="audios_mymusic/tdasit_711.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="music img">
+      <img src="images/my music/BREKBIT2.png" alt="Song 3 Cover">
+      <audio controls class="music-player">
+        <source src="audios_mymusic/BREKBIT2.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="music img">
+      <img src="images/my music/FiveM.png" alt="Song 4 Cover">
+      <audio controls class="music-player">
+        <source src="audios_mymusic/FiveM.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="music img">
+      <img src="images/my music/glade.png" alt="Song 5 Cover">
+      <audio controls class="music-player">
+        <source src="audios_mymusic/glade.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+  </div>
+</section>
+
+
+  <section id="works">
+    <h2>My Works</h2>
+
+    <h3>Drawings</h3>
+     <div class="drawing-grid">
+        <div class="drawing-box" onclick="maximizeImage(this)">
+          <img src="images/works/drawings/head_angles.jpg" alt="Head Angles" class="headangles-img"> 
+          <span>Head Angles</span>
+        </div>
+
+        <div class="drawing-box" onclick="maximizeImage(this)">
+          <img src="images/works/drawings/nude_drawing.jpg" alt="Nude Drawing" class="nudedrawing-img">
+          <span>Nude Drawing</span>
+        </div>
+
+        <div class="drawing-box" onclick="maximizeImage(this)">
+          <img src="images/works/drawings/character_design_main.jpg" alt="Character Design" class="characterdesign-img">
+          <span>Character Design</span>
+        </div>
+
+        <h3>Photographs</h3>
+<div class="photo-grid">
+  <img src="images/works/photographs/1.jpg" alt="Cyclist close-up">
+  <img src="images/works/photographs/2.jpg" alt="Cyclist motion">
+  <img src="images/works/photographs/3.jpg" alt="Cyclist rear view">
+  <img src="images/works/photographs/c1.jpg" alt="Bird's-Eye View Shot">
+  <img src="images/works/photographs/c2.jpg" alt="Bird's-Eye View Shot">
+  <img src="images/works/photographs/f1.jpg" alt="Library Building Shot">
+  <img src="images/works/photographs/f2.jpg" alt="Bird's-Eye View Shot">
+  
+</div>
+    </div>
+  </section>
+
+ 
+
+  <footer id="contacts">
+    <h2>CONTACT ME HERE</h2>
+    <div class="socials">
+      <a href="https://www.facebook.com/jmsndrcrz" target="_blank"><img src="images/social logos/facebook_logo.png" alt="Facebook"></a>
+      <a href="https://instagram.com/rdnaie" target="_blank"><img src="images/social logos/instagram_logo.png" alt="Instagram"></a>
+    </div>
+    <p>contact: 0917-160-6781</p>
+    <br>
+    <p>© 2025 drei — All Rights Reserved.</p>
+  </footer>
+
+  
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <img id="modalImg" src="">
+  </div>
+
+  <script>
+    function maximizeImage(element) {
+      const imgSrc = element.querySelector("img").src;
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImg");
+      modalImg.src = imgSrc;
+      modal.style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+</body>
+</html>

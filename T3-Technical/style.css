@@ -1,0 +1,242 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size : 5rem;
+  font-weight: 900;
+  text-align: center;
+}
+h2 {
+  font-size : 4.5rem;
+  font-weight: 800;
+  text-align: center;
+}
+h3 {
+  font-size : 2rem;
+  font-weight: 750;
+  text-align: center;
+}
+/* header */
+header {
+  background: #e55624;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: #82380f;
+  margin: 0;
+}
+nav li {
+  position: relative;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+nav a:hover {
+  background: #b44b1c;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #b44b1c;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* about me section */
+.section-dark {
+  background: #1c1c1c;
+  color: white;
+  padding: 2rem 1rem;
+}
+.about-container {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.profile-img {
+  width: 400px;
+  border-radius: 60px;
+}
+.about-text {
+  max-width: 400px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify
+}
+/* favorite albums */
+.album-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.album img {
+  width: 150px;
+  border-radius: 10px;
+}
+.album p {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+.album span {
+  font-weight: normal;
+  font-size: 0.9em;
+}
+/* my music */
+.music-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+.music img {
+  width: 200px;
+  border-radius: 10px;
+}
+.music p {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+.music span {
+  font-weight: normal;
+  font-size: 0.9em;
+}
+.music-player {
+  width: 120%;
+  margin-top: 10px;
+  transform: scale(0.7);
+  outline: none;
+}
+/* my works */
+#works {
+  background: #fffcf3;
+  padding: 2rem 1rem;
+}
+.drawing-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.drawing-box {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  height: 180px;
+  border-radius: 25px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #222;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+.drawing-box img {
+  width: 150%;
+  height: 150%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.headangles-img {
+  object-position: -120px -140px;
+}
+.nudedrawing-img {
+  object-position: -150px -200px;
+}
+.characterdesign-img {
+  object-position: -100px -700px;
+}
+.drawing-box:hover img {
+  transform: scale(1.05);
+}
+.drawing-box span {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgb(41, 41, 41);
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  justify-items: center;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.photo-grid {
+  display: grid;
+  grid-template-areas:
+  "a b"
+  "c b"
+  "d e"
+  "f f"
+  "g g";
+  gap: 15px;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.photo-grid img:nth-child(1) { grid-area: a; }
+.photo-grid img:nth-child(2) { grid-area: b; }
+.photo-grid img:nth-child(3) { grid-area: c; }
+.photo-grid img:nth-child(4) { grid-area: d; }
+.photo-grid img:nth-child(5) { grid-area: e; }
+.photo-grid img:nth-child(6) { grid-area: f; }
+.photo-grid img:nth-child(7) { grid-area: g; }
+.photo-grid img {
+width: 100%;
+height: 100%;
+border-radius: 20px;
+object-fit: cover;
+box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+/* contacts */
+footer {
+background: #e55624;
+color: white;
+text-align: center;
+padding: 1rem 1rem;
+}
+.socials img {
+width: 70px;
+margin: 0 10px;
+}
+/* MODAL */
+.modal {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(0, 0, 0, 0.9);
+align-items: center;
+justify-content: center;
+z-index: 1000;
+}
+.modal img {
+width: 90%;
+max-width: 800px;
+border-radius: 10px;
+}
